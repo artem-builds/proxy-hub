@@ -300,7 +300,9 @@ footer {
 
 /* ===== SIGN UP SECTION ===== */
 .signup-section { /* Sign up form section container */
-    background-color: #f8f9fa;
+    background-color: #ffffff; /* White background */
+    background-image: radial-gradient(circle, #cbd5e1 1px, transparent 1px); /* Dot pattern */
+    background-size: 30px 30px; /* Spacing between dots */
     padding: 80px 0;
 }
 
