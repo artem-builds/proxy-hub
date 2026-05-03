@@ -29,7 +29,7 @@ https://artem-builds.github.io/proxy-hub/
 - Font Awesome
 
 ## Deployment
-Platform: [GitHub Pages/Netlify/Vercel]  
+Platform: GitHub Pages  
 Steps: Pushed to GitHub → Enabled Pages → Deployed
 
 ## Testing
