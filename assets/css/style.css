@@ -7,11 +7,18 @@
     z-index: 1030; /* Above all content */
 }
 
-.navbar-brand { font-size: 20px; }
+.navbar-brand { /* Logo/brand name in navbar */
+    font-size: 30px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    gap: 25px; /* Space between logo and text */
+}
 
 .nav-link {
     font-size: 20px;
     margin: 0 10px; /* Spacing between links */
+    margin-right: 20px;
 }
 
 .nav-link:hover { text-decoration: underline; } /* Underline on hover */
@@ -73,7 +80,7 @@
 .container h2 {
     text-align: center;
     margin: 40px 0;
-    font-size: 36px;
+    font-size: 38px;
     font-weight: 700;
     color: #0a1929; /* Dark navy */
 }
@@ -146,7 +153,7 @@
 }
 
 .pricing-card:hover {
-    transform: translateY(-5px); /* Lift on hover */
+    transform: translateY(-15px); /* Lift on hover */
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); /* Stronger shadow on hover */
 }
 
@@ -170,8 +177,8 @@
 }
 
 .pricing-icon {
-    width: 70px;
-    height: 70px;
+    width: 120px;
+    height: 120px;
     margin: 0 auto 20px;
     display: block;
 }
