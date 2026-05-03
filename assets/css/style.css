@@ -296,3 +296,92 @@ footer {
     .pricing-section { padding: 60px 0; }
     .pricing-card { margin-bottom: 20px; }
 }
+
+
+/* ===== SIGN UP SECTION ===== */
+.signup-section { /* Sign up form section container */
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.signup-card { /* Sign up form card */
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 50px 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.signup-card h2 { /* "Create Your Account" heading */
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #0a1929;
+    margin-bottom: 10px;
+}
+
+.signup-subtitle { /* Subtitle under heading */
+    text-align: center;
+    font-size: 16px;
+    color: #64748b;
+    margin-bottom: 40px;
+}
+
+.form-label { /* Form field labels */
+    font-weight: 600;
+    color: #0a1929;
+    margin-bottom: 8px;
+}
+
+.form-control { /* Form input fields */
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus { /* Input fields on focus */
+    border-color: #0ea5e9;
+    box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
+    outline: none;
+}
+
+.form-control.is-invalid { /* Invalid input fields */
+    border-color: #ef4444;
+}
+
+.form-control.is-valid { /* Valid input fields */
+    border-color: #10b981;
+}
+
+.invalid-feedback { /* Error messages */
+    font-size: 14px;
+    color: #ef4444;
+    margin-top: 5px;
+}
+
+.btn-signup { /* Sign up button */
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #0ea5e9;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-signup:hover { /* Sign up button on hover */
+    background-color: #0284c7;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .signup-card { /* Sign up card on mobile */
+        padding: 40px 30px;
+    }
+}

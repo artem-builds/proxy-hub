@@ -16,10 +16,11 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <!-- font awesome kit -->
     <script src="https://kit.fontawesome.com/cf84c5f2fd.js" crossorigin="anonymous"></script>
-    <title>ProxyHub | Pricing</title>
+    <title>ProxyHub | Registration</title>
 </head>
 
 <body>
+
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary align-items-center">
         <div class="container-fluid">
@@ -39,10 +40,10 @@
                         <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pricing.html"><strong>Pricing</strong></a>
+                        <a class="nav-link" href="pricing.html">Pricing</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="signup.html">Sign Up</a>
+                        <a class="nav-link" href="signup.html"><strong>Sign Up</strong></a>
                     </li>
                 </ul>
 
@@ -50,81 +51,44 @@
         </div>
     </nav>
 
-
-    <!-- prices section -->
-
-    <section class="pricing-section">
+    <!-- Sign Up Form Section -->
+    <section class="signup-section">
         <div class="container">
-            <h2>Choose Your Plan</h2>
-            <p class="section-subtitle">Start with a free trial, scale as you grow</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8">
+                    <div class="signup-card">
+                        <h2>Create Your Account</h2>
+                        <p class="signup-subtitle">Get started with your mobile proxy service</p>
 
-            <div class="row">
-                <!-- Free Trial -->
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="pricing-card">
-                        <img src="assets/images/trial.png" alt="Free" class="pricing-icon">
-                        <h3>Free Trial</h3>
-                        <div class="price">FREE</div>
-                        <p class="price-period">1 Day Access</p>
-                        <ul class="features-list">
-                            <li>✓ 5GB Traffic</li>
-                            <li>✓ 1 IP Address</li>
-                            <li>✓ Basic Speed</li>
-                            <li>✓ Follow us on socials</li>
-                        </ul>
-                        <a href="#" class="btn btn-pricing btn-trial">Get Free Trial</a>
-                    </div>
-                </div>
+                        <form>
+                            <!-- Username -->
+                            <div class="mb-3">
+                                <label for="username" class="form-label">Username</label>
+                                <input type="text" class="form-control" id="username" name="username" required
+                                    minlength="3">
+                            </div>
 
-                <!-- Starter -->
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="pricing-card">
-                        <img src="assets/images/starter.png" alt="Starter" class="pricing-icon">
-                        <h3>Starter</h3>
-                        <div class="price">£15</div>
-                        <p class="price-period">per week</p>
-                        <ul class="features-list">
-                            <li>✓ 20GB Traffic</li>
-                            <li>✓ Up to 3 IPs</li>
-                            <li>✓ Standard Support</li>
-                            <li>✓ 4G/5G Speed</li>
-                        </ul>
-                        <a href="#" class="btn btn-pricing">Start Now</a>
-                    </div>
-                </div>
+                            <!-- Email -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
 
-                <!-- Professional (Popular) -->
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="pricing-card pricing-popular">
-                        <span class="popular-badge">Most Popular</span>
-                        <img src="assets/images/pro.png" alt="Professional" class="pricing-icon">
-                        <h3>Professional</h3>
-                        <div class="price">£49</div>
-                        <p class="price-period">per month</p>
-                        <ul class="features-list">
-                            <li>✓ 100GB Traffic</li>
-                            <li>✓ Up to 10 IPs</li>
-                            <li>✓ Priority Support</li>
-                            <li>✓ Auto Rotation</li>
-                        </ul>
-                        <a href="#" class="btn btn-pricing">Choose Professional</a>
-                    </div>
-                </div>
+                            <!-- Password -->
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" name="password" required
+                                    minlength="8"
+                                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                                    title="Password must be at least 8 characters with 1 uppercase letter, 1 number, and 1 special character (@$!%*?&)">
+                                <small class="form-text text-muted">
+                                    Must contain: uppercase, lowercase, number, special character (@$!%*?&)
+                                </small>
+                            </div>
 
-                <!-- Enterprise -->
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="pricing-card">
-                        <img src="assets/images/enterprice.png" alt="Enterprise" class="pricing-icon">
-                        <h3>Enterprise</h3>
-                        <div class="price">£149</div>
-                        <p class="price-period">per month</p>
-                        <ul class="features-list">
-                            <li>✓ Unlimited Traffic</li>
-                            <li>✓ Unlimited IPs</li>
-                            <li>✓ 24/7 Dedicated Support</li>
-                            <li>✓ Custom Setup</li>
-                        </ul>
-                        <a href="#" class="btn btn-pricing btn-enterprise">Contact Sales</a>
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-signup">Sign Up</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -171,6 +135,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
