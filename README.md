@@ -3,7 +3,7 @@
 Professional B2B website offering UK-based mobile proxies for market research, ad verification, and web scraping.
 
 ## Live Site
-[Insert your deployment URL here]
+https://artem-builds.github.io/proxy-hub/
 
 ## Features
 - **Homepage:** Hero section, benefits showcase, CTA to pricing
