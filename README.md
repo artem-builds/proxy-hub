@@ -11,6 +11,17 @@ Professional B2B website offering UK-based mobile proxies for market research, a
 - **Sign Up:** Registration form with HTML5 validation
 - **Responsive Design:** Mobile-first using Bootstrap 5.3
 
+## Screenshots
+
+### Homepage
+![Homepage](assets/images/screenshots/home_page.png)
+
+### Pricing Page
+![Pricing Page](assets/images/screenshots/pricing.png)
+
+### Sign Up Form
+![Sign Up](assets/images/screenshots/sign_up.png)
+
 ## Technologies
 - HTML5
 - CSS3
