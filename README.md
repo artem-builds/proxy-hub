@@ -37,11 +37,6 @@ Steps: Pushed to GitHub → Enabled Pages → Deployed
 - Tested on Chrome, Firefox, Safari, Edge
 - Responsive tested on desktop, tablet, mobile
 
-## AI Usage
-Used Claude AI for:
-- Code generation (HTML, CSS, Bootstrap layouts)
-- Debugging (CSS conflicts, responsive issues)
-- Design suggestions (color schemes, layouts)
 
 **Key learnings:** AI sped up development significantly, but required clear instructions and manual testing. Focused on requirements and design decisions while AI handled boilerplate code.
 
