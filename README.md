@@ -11,7 +11,6 @@ Professional B2B website offering UK-based mobile proxies for market research, a
 - [File Structure](#file-structure)
 - [Deployment](#deployment)
 - [Testing](#testing)
-- [AI Usage](#ai-usage)
 - [Credits](#credits)
 - [Author](#author)
 
