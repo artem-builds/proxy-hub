@@ -4,7 +4,7 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* Light shadow below */
     position: sticky; /* Stays fixed on scroll */
     top: 0;
-    z-index: 1030; /* Above all content */
+    z-index: 1000; /* Above all content */
 }
 
 .navbar-brand { /* Logo/brand name in navbar */
@@ -386,4 +386,403 @@ footer {
     .signup-card { /* Sign up card on mobile */
         padding: 40px 30px;
     }
+}
+
+
+/* ===== TESTIMONIALS SECTION ===== */
+.testimonials-section { /* Testimonials carousel section */
+    background-color: #f8f9fa; /* Light gray background */
+    padding-bottom: 80px;
+    padding-top: 20px;
+}
+
+.testimonials-section h2 { /* "What Our Clients Say" heading */
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #0a1929;
+    margin-bottom: 10px;
+}
+
+.testimonials-section .section-subtitle { /* Subtitle under heading */
+    text-align: center;
+    font-size: 18px;
+    color: #64748b;
+    margin-bottom: 50px;
+}
+
+.carousel { /* Carousel container */
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.testimonial-card { /* Individual testimonial card */
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 50px 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin: 0 20px;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.quote-icon { /* Quote icon at top of card */
+    font-size: 40px;
+    color: #0ea5e9;
+    margin-bottom: 20px;
+}
+
+.testimonial-text { /* Testimonial text content */
+    font-size: 18px;
+    line-height: 1.8;
+    color: #2c3e50;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.testimonial-author { /* Author info container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.author-avatar { /* User icon/avatar */
+    font-size: 50px;
+    color: #0ea5e9;
+}
+
+.author-info { /* Author text container */
+    text-align: center;
+}
+
+.author-info h5 { /* Author name */
+    font-size: 18px;
+    font-weight: 600;
+    color: #0a1929;
+    margin: 0 0 5px 0;
+}
+
+.author-info p { /* Author job title/company */
+    font-size: 14px;
+    color: #64748b;
+    margin: 0;
+}
+
+/* Carousel Controls (Arrows) */
+.carousel-control-prev,
+.carousel-control-next { /* Previous/Next arrow buttons */
+    width: 50px;
+    height: 50px;
+    background-color: #0ea5e9;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+}
+
+.carousel-control-prev { /* Previous arrow position */
+    left: -70px;
+}
+
+.carousel-control-next { /* Next arrow position */
+    right: -70px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover { /* Arrow buttons on hover */
+    background-color: #0284c7;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon { /* Arrow icons */
+    width: 20px;
+    height: 20px;
+}
+
+/* Carousel Indicators (Dots) */
+.carousel-indicators { /* Dots container */
+    margin-bottom: -40px;
+}
+
+.carousel-indicators button { /* Individual dots */
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #cbd5e1;
+    border: none;
+    margin: 0 5px;
+}
+
+.carousel-indicators button.active { /* Active dot */
+    background-color: #0ea5e9;
+}
+
+/* Mobile Responsive */
+@media (max-width: 991px) {
+    .testimonials-section { /* Testimonials section on tablet/mobile */
+        padding: 60px 0;
+    }
+
+    .testimonial-card { /* Testimonial card on mobile */
+        padding: 40px 30px;
+        margin: 0 10px;
+        min-height: auto;
+    }
+
+    .carousel-control-prev { /* Hide arrows on mobile (use swipe) */
+        left: 10px;
+    }
+
+    .carousel-control-next {
+        right: 10px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 40px;
+        height: 40px;
+    }
+
+    .testimonial-text { /* Smaller text on mobile */
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-control-prev,
+    .carousel-control-next { /* Smaller arrows on small mobile */
+        width: 35px;
+        height: 35px;
+    }
+
+    .quote-icon { /* Smaller quote icon on mobile */
+        font-size: 30px;
+    }
+}
+
+/* ===== WHAT ARE PROXIES SECTION ===== */
+.what-are-proxies { /* Educational section about mobile proxies */
+    background-color: #ffffff; /* White background */
+    padding: 20px 0;
+    border-bottom: 2px solid #ddd;
+}
+
+.what-are-proxies h2 { /* Main heading */
+    font-size: 36px;
+    font-weight: 700;
+    color: #0a1929;
+    margin-bottom: 20px;
+}
+
+.explanation-text { /* Main explanation paragraph */
+    font-size: 18px;
+    line-height: 1.8;
+    color: #2c3e50;
+    margin-bottom: 40px;
+}
+
+.what-are-proxies h3 { /* "How to Use Them" subheading */
+    font-size: 24px;
+    font-weight: 600;
+    color: #0a1929;
+    margin-bottom: 25px;
+}
+
+.use-cases { /* Container for use case items */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.use-case-item { /* Individual use case row */
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.use-case-item i { /* Font Awesome icons for use cases */
+    font-size: 32px;
+    color: #0ea5e9;
+    flex-shrink: 0;
+    margin-top: 5px;
+}
+
+.use-case-item h4 { /* Use case title */
+    font-size: 18px;
+    font-weight: 600;
+    color: #0a1929;
+    margin: 0 0 5px 0;
+}
+
+.use-case-item p { /* Use case description */
+    font-size: 15px;
+    color: #64748b;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Right Side Illustration */
+.proxy-illustration { /* Simple illustration container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 80px;
+    color: #0ea5e9;
+    padding: 40px;
+}
+
+.proxy-illustration .fa-mobile-alt { /* Mobile phone icon */
+    font-size: 100px;
+}
+
+.proxy-illustration .fa-globe { /* Globe icon */
+    font-size: 100px;
+}
+
+.arrows { /* Arrow container */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.arrows i { /* Individual arrows */
+    font-size: 30px;
+    color: #0ea5e9;
+    animation: moveRight 1.5s ease-in-out infinite;
+}
+
+.arrows i:nth-child(2) { /* Second arrow animation delay */
+    animation-delay: 0.3s;
+}
+
+.arrows i:nth-child(3) { /* Third arrow animation delay */
+    animation-delay: 0.6s;
+}
+
+/* Arrow animation */
+@keyframes moveRight {
+    0%, 100% {
+        transform: translateX(0);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translateX(10px);
+        opacity: 1;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 991px) {
+    .what-are-proxies { /* Section on tablet/mobile */
+        padding: 60px 0;
+    }
+
+    .proxy-illustration { /* Hide illustration on mobile */
+        display: none;
+    }
+
+    .explanation-text { /* Smaller text on mobile */
+        font-size: 16px;
+    }
+
+    .use-case-item i { /* Smaller icons on mobile */
+        font-size: 28px;
+    }
+}
+
+/* Success message alert */
+#successMessage { /* Success notification after form submission */
+    background-color: #d1f4e0;
+    border: 1px solid #10b981;
+    color: #065f46;
+    border-radius: 8px;
+    padding: 15px 20px;
+    font-size: 16px;
+}
+
+#successMessage i { /* Check icon in success message */
+    color: #10b981;
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+
+/* Terms and Conditions Checkbox */
+.form-check { /* Terms checkbox container */
+    padding-left: 0;
+}
+
+.form-check-input { /* Checkbox input */
+    width: 20px;
+    height: 20px;
+    margin-top: 0.15rem;
+    cursor: pointer;
+}
+
+.form-check-label { /* Checkbox label text */
+    font-size: 14px;
+    color: #2c3e50;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.form-check-label a { /* Terms link */
+    color: #0ea5e9;
+    text-decoration: none;
+}
+
+.form-check-label a:hover { /* Terms link on hover */
+    text-decoration: underline;
+}
+
+/* Terms Modal Styling */
+.modal-header { /* Modal header */
+    background-color: #0a1929;
+    color: #ffffff;
+}
+
+.modal-header .btn-close { /* Close button */
+    filter: invert(1);
+}
+
+.modal-title { /* Modal title */
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.modal-body { /* Modal body content */
+    padding: 30px;
+}
+
+.modal-body h6 { /* Section headings in modal */
+    font-size: 16px;
+    font-weight: 600;
+    color: #0a1929;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.modal-body p { /* Paragraphs in modal */
+    font-size: 14px;
+    color: #2c3e50;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.modal-body ul { /* Lists in modal */
+    font-size: 14px;
+    color: #2c3e50;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.modal-footer { /* Modal footer */
+    border-top: 1px solid #e2e8f0;
 }
