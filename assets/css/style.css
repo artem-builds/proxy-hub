@@ -123,7 +123,8 @@
     padding: 80px 0;
 }
 
-.pricing-section h2 {
+.pricing-section h2,
+.testimonials-section h2 {
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -269,12 +270,6 @@
 }
 
 /* ===== FOOTER ===== */
-.footer {
-    display: flex;
-    justify-content: space-between;
-    margin: 50px;
-}
-
 footer {
     text-align: center;
     padding: 20px 0;
@@ -394,21 +389,6 @@ footer {
     background-color: #f8f9fa; /* Light gray background */
     padding-bottom: 80px;
     padding-top: 20px;
-}
-
-.testimonials-section h2 { /* "What Our Clients Say" heading */
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    color: #0a1929;
-    margin-bottom: 10px;
-}
-
-.testimonials-section .section-subtitle { /* Subtitle under heading */
-    text-align: center;
-    font-size: 18px;
-    color: #64748b;
-    margin-bottom: 50px;
 }
 
 .carousel { /* Carousel container */
