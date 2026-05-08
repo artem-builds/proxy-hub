@@ -1,4 +1,4 @@
-/* ===== NAVBAR ===== */
+/* ====== NAVBAR ===== */
 .navbar {
     background-color: #ffffff !important; /* White background */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* Light shadow below */
@@ -123,7 +123,7 @@
     padding: 80px 0;
 }
 
-.pricing-section h2,
+.pricing-section h1,
 .testimonials-section h2 {
     text-align: center;
     font-size: 36px;
@@ -308,7 +308,7 @@ footer {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.signup-card h2 { /* "Create Your Account" heading */
+.signup-card h1 { /* "Create Your Account" heading */
     text-align: center;
     font-size: 32px;
     font-weight: 700;

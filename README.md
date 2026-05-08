@@ -175,8 +175,12 @@ https://artem-builds.github.io/proxy-hub/
 
 ### Code Validation
 - **HTML:** Validated using [W3C Markup Validator](https://validator.w3.org/)
+  - index.html: ✓ Pass - No errors found
+  - pricing.html: ✓ Pass - No errors found
+  - signup.html: ✓ Pass - No errors found
 - **CSS:** Validated using [W3C CSS Validator (Jigsaw)](https://jigsaw.w3.org/css-validator/)
-- **Results:** [Add validation status - Pass/Minor warnings]
+  - style.css: ✓ Pass - No errors found
+
 
 ### Browser Testing
 Tested and verified on:
