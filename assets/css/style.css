@@ -15,46 +15,46 @@
     gap: 25px; /* Space between logo and text */
 }
 
-.nav-link {
+.nav-link { /* Navigation menu links */
     font-size: 20px;
-    margin: 0 10px; /* Spacing between links */
+    margin: 0 10px;
     margin-right: 20px;
 }
 
 .nav-link:hover { text-decoration: underline; } /* Underline on hover */
 
 /* ===== HERO SECTION ===== */
-#hero {
-    background: url("../images/hero.png") no-repeat center center / cover; /* Full section background */
+#hero { /* Main hero section with background image */
+    background: url("../images/hero.png") no-repeat center center / cover;
     width: 100%;
     height: 653px;
 }
 
-.hero-content {
+.hero-content { /* Container for hero text content */
     max-width: 600px;
     text-align: left;
-    padding: 50px 0 0 50px; /* Top and left padding */
+    padding: 50px 0 0 50px;
 }
 
-#hero h1 {
+#hero h1 { /* Main hero heading */
     font-size: 52px;
     font-weight: 700;
     line-height: 1.2;
-    color: #fff; /* White text */
+    color: #fff;
     margin: 0;
 }
 
 .uk-highlight { color: #0ea5e9; } /* Cyan accent for "UK" */
 
-#hero p {
+#hero p { /* Hero subtitle */
     font-size: 20px;
     line-height: 1.6;
-    color: #b0bec5; /* Light gray subtitle */
+    color: #b0bec5;
     margin: 24px 0 0;
     max-width: 600px;
 }
 
-.hero-cta {
+.hero-cta { /* "Get Started" CTA button */
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -63,493 +63,23 @@
     margin: 25px 0 35px 0;
     font-size: 18px;
     font-weight: 600;
-    background-color: #0ea5e9; /* Cyan button */
-    color: #0a1929; /* Dark navy text */
+    background-color: #0ea5e9;
+    color: #0a1929;
     border-radius: 8px;
-    box-shadow: 0 4px 14px rgba(14, 165, 233, 0.3); /* Button shadow */
+    box-shadow: 0 4px 14px rgba(14, 165, 233, 0.3);
     text-decoration: none;
-    transition: all 0.3s ease; /* Smooth hover effect */
-}
-
-.hero-cta:hover {
-    transform: translateY(-3px); /* Lift up on hover */
-    box-shadow: 0 6px 20px rgba(14, 165, 233, 0.4); /* Bigger shadow on hover */
-}
-
-/* ===== BENEFITS SECTION ===== */
-.container h2 {
-    text-align: center;
-    margin: 40px 0;
-    font-size: 38px;
-    font-weight: 700;
-    color: #0a1929; /* Dark navy */
-}
-
-.benefit-card {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px; /* Space between icon and text */
-    margin-bottom: 30px;
-}
-
-.benefit-icon {
-    width: 150px;
-    height: 150px;
-    flex-shrink: 0; /* Icon stays fixed size */
-    object-fit: contain; /* Maintain aspect ratio */
-}
-
-.benefit-content { flex: 1; } /* Text takes remaining space */
-
-.benefit-content h3 {
-    margin: 0 0 10px;
-    font-size: 20px;
-    font-weight: 600;
-    color: #0a1929;
-}
-
-.benefit-content p {
-    margin: 0;
-    font-size: 16px;
-    color: #2c3e50;
-    line-height: 1.6;
-}
-
-/* ===== PRICING SECTION ===== */
-.pricing-section {
-    background-color: #ffffff; /* White background */
-    background-image: radial-gradient(circle, #cbd5e1 1px, transparent 1px); /* Dot pattern */
-    background-size: 30px 30px; /* Spacing between dots */
-    padding: 80px 0;
-}
-
-.pricing-section h1,
-.testimonials-section h2 {
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    color: #0a1929;
-    margin-bottom: 10px;
-}
-
-.section-subtitle {
-    text-align: center;
-    font-size: 18px;
-    color: #64748b; /* Gray subtitle */
-    margin-bottom: 50px;
-}
-
-/* Pricing Cards */
-.pricing-card {
-    background-color: #ffffff;
-    border-radius: 12px;
-    padding: 40px 30px;
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Card shadow */
-    transition: all 0.3s ease;
-    height: 100%; /* Equal height cards */
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-.pricing-card:hover {
-    transform: translateY(-15px); /* Lift on hover */
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); /* Stronger shadow on hover */
-}
-
-/* Popular card highlight */
-.pricing-popular {
-    border-top: 4px solid #0ea5e9; /* Cyan top border */
-    background: linear-gradient(to bottom, #f0f9ff, #ffffff); /* Light gradient */
-}
-
-.popular-badge {
-    position: absolute;
-    top: -15px;
-    right: 20px;
-    background-color: #0ea5e9;
-    color: #ffffff;
-    padding: 6px 16px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-.pricing-icon {
-    width: 120px;
-    height: 120px;
-    margin: 0 auto 20px;
-    display: block;
-}
-
-.pricing-card h3 {
-    font-size: 24px;
-    font-weight: 600;
-    color: #0a1929;
-    margin-bottom: 15px;
-}
-
-.price {
-    font-size: 42px;
-    font-weight: 700;
-    color: #0a1929;
-    margin-bottom: 5px;
-}
-
-.price-period {
-    font-size: 14px;
-    color: #64748b;
-    margin-bottom: 25px;
-}
-
-/* Features list inside cards */
-.features-list {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 30px 0;
-    text-align: left;
-    flex-grow: 1; /* Pushes button to bottom */
-}
-
-.features-list li {
-    font-size: 14px;
-    color: #2c3e50;
-    margin-bottom: 12px;
-    padding-left: 5px;
-}
-
-/* Pricing buttons */
-.btn-pricing {
-    width: 100%;
-    padding: 14px 20px;
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 8px;
-    text-decoration: none;
-    display: inline-block;
-    transition: all 0.3s ease;
-    border: none;
-    cursor: pointer;
-    background-color: #0ea5e9; /* Default cyan */
-    color: #ffffff;
-}
-
-.btn-pricing:hover {
-    background-color: #0284c7; /* Darker cyan */
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
-    color: #ffffff;
-}
-
-.btn-trial {
-    background-color: #10b981; /* Green for free trial */
-    color: #ffffff;
-}
-
-.btn-trial:hover {
-    background-color: #059669;
-    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
-}
-
-.btn-enterprise {
-    background-color: #1e3a8a; /* Dark blue for enterprise */
-    color: #ffffff;
-}
-
-.btn-enterprise:hover {
-    background-color: #1e40af;
-    box-shadow: 0 4px 12px rgba(30, 58, 138, 0.3);
-}
-
-/* ===== CONTACTS SECTION ===== */
-.contacts-section {
-    border-top: 2px solid #ddd;
-    padding-top: 20px;
-}
-
-/* ===== FOOTER ===== */
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #0a1929; /* Dark navy background */
-    color: #b0bec5; /* Light gray text */
-}
-
-.button-bottom {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    border-top: 2px solid #ddd;
-    padding-top: 20px;
-    margin: 0;
-}
-
-/* ===== MOBILE RESPONSIVE ===== */
-@media (max-width: 991px) {
-    .pricing-section { padding: 60px 0; }
-    .pricing-card { margin-bottom: 20px; }
-}
-
-
-/* ===== SIGN UP SECTION ===== */
-.signup-section { /* Sign up form section container */
-    background-color: #ffffff; /* White background */
-    background-image: radial-gradient(circle, #cbd5e1 1px, transparent 1px); /* Dot pattern */
-    background-size: 30px 30px; /* Spacing between dots */
-    padding: 80px 0;
-}
-
-.signup-card { /* Sign up form card */
-    background-color: #ffffff;
-    border-radius: 12px;
-    padding: 50px 40px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-.signup-card h1 { /* "Create Your Account" heading */
-    text-align: center;
-    font-size: 32px;
-    font-weight: 700;
-    color: #0a1929;
-    margin-bottom: 10px;
-}
-
-.signup-subtitle { /* Subtitle under heading */
-    text-align: center;
-    font-size: 16px;
-    color: #64748b;
-    margin-bottom: 40px;
-}
-
-.form-label { /* Form field labels */
-    font-weight: 600;
-    color: #0a1929;
-    margin-bottom: 8px;
-}
-
-.form-control { /* Form input fields */
-    padding: 12px 16px;
-    font-size: 16px;
-    border: 2px solid #e2e8f0;
-    border-radius: 8px;
     transition: all 0.3s ease;
 }
 
-.form-control:focus { /* Input fields on focus */
-    border-color: #0ea5e9;
-    box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
-    outline: none;
-}
-
-.form-control.is-invalid { /* Invalid input fields */
-    border-color: #ef4444;
-}
-
-.form-control.is-valid { /* Valid input fields */
-    border-color: #10b981;
-}
-
-.invalid-feedback { /* Error messages */
-    font-size: 14px;
-    color: #ef4444;
-    margin-top: 5px;
-}
-
-.btn-signup { /* Sign up button */
-    width: 100%;
-    padding: 14px 20px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #0ea5e9;
-    color: #ffffff;
-    border: none;
-    border-radius: 8px;
-    margin-top: 20px;
-    transition: all 0.3s ease;
-}
-
-.btn-signup:hover { /* Sign up button on hover */
-    background-color: #0284c7;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
-}
-
-/* Mobile responsive */
-@media (max-width: 768px) {
-    .signup-card { /* Sign up card on mobile */
-        padding: 40px 30px;
-    }
-}
-
-
-/* ===== TESTIMONIALS SECTION ===== */
-.testimonials-section { /* Testimonials carousel section */
-    background-color: #f8f9fa; /* Light gray background */
-    padding-bottom: 80px;
-    padding-top: 20px;
-}
-
-.carousel { /* Carousel container */
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.testimonial-card { /* Individual testimonial card */
-    background-color: #ffffff;
-    border-radius: 12px;
-    padding: 50px 40px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    margin: 0 20px;
-    min-height: 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.quote-icon { /* Quote icon at top of card */
-    font-size: 40px;
-    color: #0ea5e9;
-    margin-bottom: 20px;
-}
-
-.testimonial-text { /* Testimonial text content */
-    font-size: 18px;
-    line-height: 1.8;
-    color: #2c3e50;
-    font-style: italic;
-    margin-bottom: 30px;
-}
-
-.testimonial-author { /* Author info container */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-top: 30px;
-}
-
-.author-avatar { /* User icon/avatar */
-    font-size: 50px;
-    color: #0ea5e9;
-}
-
-.author-info { /* Author text container */
-    text-align: center;
-}
-
-.author-info h5 { /* Author name */
-    font-size: 18px;
-    font-weight: 600;
-    color: #0a1929;
-    margin: 0 0 5px 0;
-}
-
-.author-info p { /* Author job title/company */
-    font-size: 14px;
-    color: #64748b;
-    margin: 0;
-}
-
-/* Carousel Controls (Arrows) */
-.carousel-control-prev,
-.carousel-control-next { /* Previous/Next arrow buttons */
-    width: 50px;
-    height: 50px;
-    background-color: #0ea5e9;
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 1;
-}
-
-.carousel-control-prev { /* Previous arrow position */
-    left: -70px;
-}
-
-.carousel-control-next { /* Next arrow position */
-    right: -70px;
-}
-
-.carousel-control-prev:hover,
-.carousel-control-next:hover { /* Arrow buttons on hover */
-    background-color: #0284c7;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon { /* Arrow icons */
-    width: 20px;
-    height: 20px;
-}
-
-/* Carousel Indicators (Dots) */
-.carousel-indicators { /* Dots container */
-    margin-bottom: -40px;
-}
-
-.carousel-indicators button { /* Individual dots */
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #cbd5e1;
-    border: none;
-    margin: 0 5px;
-}
-
-.carousel-indicators button.active { /* Active dot */
-    background-color: #0ea5e9;
-}
-
-/* Mobile Responsive */
-@media (max-width: 991px) {
-    .testimonials-section { /* Testimonials section on tablet/mobile */
-        padding: 60px 0;
-    }
-
-    .testimonial-card { /* Testimonial card on mobile */
-        padding: 40px 30px;
-        margin: 0 10px;
-        min-height: auto;
-    }
-
-    .carousel-control-prev { /* Hide arrows on mobile (use swipe) */
-        left: 10px;
-    }
-
-    .carousel-control-next {
-        right: 10px;
-    }
-
-    .carousel-control-prev,
-    .carousel-control-next {
-        width: 40px;
-        height: 40px;
-    }
-
-    .testimonial-text { /* Smaller text on mobile */
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 576px) {
-    .carousel-control-prev,
-    .carousel-control-next { /* Smaller arrows on small mobile */
-        width: 35px;
-        height: 35px;
-    }
-
-    .quote-icon { /* Smaller quote icon on mobile */
-        font-size: 30px;
-    }
+.hero-cta:hover { /* CTA button on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(14, 165, 233, 0.4);
 }
 
 /* ===== WHAT ARE PROXIES SECTION ===== */
 .what-are-proxies { /* Educational section about mobile proxies */
-    background-color: #ffffff; /* White background */
-    padding: 20px 0;
-    border-bottom: 2px solid #ddd;
+    background-color: #ffffff;
+    padding: 80px 0;
 }
 
 .what-are-proxies h2 { /* Main heading */
@@ -606,7 +136,6 @@ footer {
     line-height: 1.6;
 }
 
-/* Right Side Illustration */
 .proxy-illustration { /* Simple illustration container */
     display: flex;
     align-items: center;
@@ -631,49 +160,496 @@ footer {
     gap: 10px;
 }
 
-.arrows i { /* Individual arrows */
+.arrows i { /* Individual arrows with animation */
     font-size: 30px;
     color: #0ea5e9;
     animation: moveRight 1.5s ease-in-out infinite;
 }
 
-.arrows i:nth-child(2) { /* Second arrow animation delay */
-    animation-delay: 0.3s;
+.arrows i:nth-child(2) { animation-delay: 0.3s; } /* Second arrow delay */
+.arrows i:nth-child(3) { animation-delay: 0.6s; } /* Third arrow delay */
+
+@keyframes moveRight { /* Arrow movement animation */
+    0%, 100% { transform: translateX(0); opacity: 0.5; }
+    50% { transform: translateX(10px); opacity: 1; }
 }
 
-.arrows i:nth-child(3) { /* Third arrow animation delay */
-    animation-delay: 0.6s;
+/* ===== BENEFITS SECTION ===== */
+.key-benefits { /* Benefits section container */
+    background-color: #f0f9ff; /* Light blue background */
+    background-image: radial-gradient(circle, #cbd5e1 1px, transparent 1px); /* Dot pattern */
+    background-size: 30px 30px;
+    padding: 80px 0;
 }
 
-/* Arrow animation */
-@keyframes moveRight {
-    0%, 100% {
-        transform: translateX(0);
-        opacity: 0.5;
-    }
-    50% {
-        transform: translateX(10px);
-        opacity: 1;
-    }
+.container h2 { /* Section headings */
+    text-align: center;
+    margin: 40px 0;
+    font-size: 38px;
+    font-weight: 700;
+    color: #0a1929;
 }
 
-/* Mobile Responsive */
-@media (max-width: 991px) {
-    .what-are-proxies { /* Section on tablet/mobile */
-        padding: 60px 0;
-    }
+.benefit-card { /* Individual benefit card container */
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 30px;
+}
 
-    .proxy-illustration { /* Hide illustration on mobile */
-        display: none;
-    }
+.benefit-icon { /* Benefit icons */
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    object-fit: contain;
+}
 
-    .explanation-text { /* Smaller text on mobile */
-        font-size: 16px;
-    }
+.benefit-content { flex: 1; } /* Text takes remaining space */
 
-    .use-case-item i { /* Smaller icons on mobile */
-        font-size: 28px;
-    }
+.benefit-content h3 { /* Benefit card titles */
+    margin: 0 0 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #0a1929;
+}
+
+.benefit-content p { /* Benefit card description */
+    margin: 0;
+    font-size: 16px;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+/* ===== TESTIMONIALS SECTION ===== */
+.testimonials-section { /* Testimonials carousel section */
+    background-color: #0a1929; /* Dark navy background */
+    padding: 80px 0;
+}
+
+.testimonials-section h2 { /* "What Our Clients Say" heading */
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff; /* White text on dark background */
+    margin-bottom: 10px;
+}
+
+.testimonials-section .section-subtitle { /* Subtitle under heading */
+    text-align: center;
+    font-size: 18px;
+    color: #b0bec5; /* Light gray on dark background */
+    margin-bottom: 50px;
+}
+
+.carousel { /* Carousel container */
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.testimonial-card { /* Individual testimonial card */
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 50px 40px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2); /* Stronger shadow on dark bg */
+    margin: 0 20px;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.quote-icon { /* Quote icon at top of card */
+    font-size: 40px;
+    color: #0ea5e9;
+    margin-bottom: 20px;
+}
+
+.testimonial-text { /* Testimonial text content */
+    font-size: 18px;
+    line-height: 1.8;
+    color: #2c3e50;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.testimonial-author { /* Author info container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.author-avatar { /* User icon/avatar */
+    font-size: 50px;
+    color: #0ea5e9;
+}
+
+.author-info { text-align: center; } /* Author text container */
+
+.author-info h3 { /* Author name */
+    font-size: 18px;
+    font-weight: 600;
+    color: #0a1929;
+    margin: 0 0 5px 0;
+}
+
+.author-info p { /* Author job title/company */
+    font-size: 14px;
+    color: #64748b;
+    margin: 0;
+}
+
+/* Carousel Controls */
+.carousel-control-prev,
+.carousel-control-next { /* Previous/Next arrow buttons */
+    width: 50px;
+    height: 50px;
+    background-color: #0ea5e9;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+}
+
+.carousel-control-prev { left: -70px; } /* Previous arrow position */
+.carousel-control-next { right: -70px; } /* Next arrow position */
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover { background-color: #0284c7; } /* Arrows on hover */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon { width: 20px; height: 20px; } /* Arrow icons */
+
+/* Carousel Indicators */
+.carousel-indicators { margin-bottom: -40px; } /* Dots container */
+
+.carousel-indicators button { /* Individual dots */
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #64748b; /* Gray dots on dark background */
+    border: none;
+    margin: 0 5px;
+}
+
+.carousel-indicators button.active { background-color: #0ea5e9; } /* Active dot */
+
+/* ===== CTA SECTION ===== */
+.cta-pricing { /* Call to action section */
+    background-color: #0ea5e9; /* Bright cyan background */
+    padding: 80px 0;
+    text-align: center;
+}
+
+.cta-pricing h2 { /* CTA heading */
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.cta-subtitle { /* CTA subtitle */
+    font-size: 18px;
+    color: #0a1929; /* Dark text on cyan background */
+    margin-bottom: 30px;
+}
+
+.btn-cta-pricing { /* View Pricing button */
+    display: inline-block;
+    padding: 16px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #0a1929; /* Dark navy on cyan background */
+    color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+.btn-cta-pricing:hover { /* CTA button on hover */
+    background-color: #1e3a5f;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+}
+
+/* ===== PRICING SECTION ===== */
+.pricing-section { /* Pricing plans section */
+    background-color: #ffffff;
+    background-image: radial-gradient(circle, #cbd5e1 1px, transparent 1px);
+    background-size: 30px 30px;
+    padding: 80px 0;
+}
+
+.pricing-section h1 { /* "Choose Your Plan" heading */
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #0a1929;
+    margin-bottom: 10px;
+}
+
+.section-subtitle { /* Subtitle under headings */
+    text-align: center;
+    font-size: 18px;
+    color: #64748b;
+    margin-bottom: 50px;
+}
+
+.pricing-card { /* Individual pricing plan card */
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.pricing-card:hover { /* Pricing cards on hover */
+    transform: translateY(-15px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.pricing-popular { /* Professional plan card highlight */
+    border-top: 4px solid #0ea5e9;
+    background: linear-gradient(to bottom, #f0f9ff, #ffffff);
+}
+
+.popular-badge { /* "Most Popular" badge */
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    background-color: #0ea5e9;
+    color: #ffffff;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.pricing-icon { /* Plan icons */
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.pricing-card h3 { /* Plan names */
+    font-size: 24px;
+    font-weight: 600;
+    color: #0a1929;
+    margin-bottom: 15px;
+}
+
+.price { /* Plan prices */
+    font-size: 42px;
+    font-weight: 700;
+    color: #0a1929;
+    margin-bottom: 5px;
+}
+
+.price-period { /* Price period text */
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+.features-list { /* Features list inside cards */
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.features-list li { /* Individual feature items */
+    font-size: 14px;
+    color: #2c3e50;
+    margin-bottom: 12px;
+    padding-left: 5px;
+}
+
+.btn-pricing { /* Default pricing buttons */
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    background-color: #0ea5e9;
+    color: #ffffff;
+}
+
+.btn-pricing:hover { /* Pricing buttons on hover */
+    background-color: #0284c7;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
+    color: #ffffff;
+}
+
+.btn-trial { /* Free trial button */
+    background-color: #10b981;
+    color: #ffffff;
+}
+
+.btn-trial:hover { /* Free trial button on hover */
+    background-color: #059669;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.btn-enterprise { /* Enterprise button */
+    background-color: #1e3a8a;
+    color: #ffffff;
+}
+
+.btn-enterprise:hover { /* Enterprise button on hover */
+    background-color: #1e40af;
+    box-shadow: 0 4px 12px rgba(30, 58, 138, 0.3);
+}
+
+/* ===== CONTACTS SECTION ===== */
+.contacts-section { /* Footer contacts section */
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+.contacts-section h4 { /* Contact headings */
+    color: #0a1929;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.contacts-section p { /* Contact text */
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: #2c3e50;
+}
+
+.contacts-section i { /* Contact icons */
+    color: #0ea5e9;
+    margin-right: 10px;
+    width: 20px;
+}
+
+.contacts-section a { /* Contact links */
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+.contacts-section a:hover { /* Contact links on hover */
+    color: #0ea5e9;
+}
+
+.footer-logo { /* Logo in footer */
+    width: 200px;
+    height: auto;
+}
+
+/* ===== FOOTER ===== */
+footer { /* Copyright footer bar */
+    text-align: center;
+    padding: 20px 0;
+    background-color: #0a1929;
+    color: #b0bec5;
+}
+
+.button-bottom { /* Footer bottom button container */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 20px;
+    margin: 0;
+}
+
+/* ===== SIGN UP SECTION ===== */
+.signup-section { /* Sign up form section container */
+    background-color: #ffffff;
+    background-image: radial-gradient(circle, #cbd5e1 1px, transparent 1px);
+    background-size: 30px 30px;
+    padding: 80px 0;
+}
+
+.signup-card { /* Sign up form card */
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 50px 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.signup-card h1 { /* "Create Your Account" heading */
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #0a1929;
+    margin-bottom: 10px;
+}
+
+.signup-subtitle { /* Subtitle under heading */
+    text-align: center;
+    font-size: 16px;
+    color: #64748b;
+    margin-bottom: 40px;
+}
+
+.form-label { /* Form field labels */
+    font-weight: 600;
+    color: #0a1929;
+    margin-bottom: 8px;
+}
+
+.form-control { /* Form input fields */
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus { /* Input fields on focus */
+    border-color: #0ea5e9;
+    box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
+    outline: none;
+}
+
+.form-control.is-invalid { border-color: #ef4444; } /* Invalid input */
+.form-control.is-valid { border-color: #10b981; } /* Valid input */
+
+.invalid-feedback { /* Error messages */
+    font-size: 14px;
+    color: #ef4444;
+    margin-top: 5px;
+}
+
+.btn-signup { /* Sign up button */
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #0ea5e9;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-signup:hover { /* Sign up button on hover */
+    background-color: #0284c7;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
 }
 
 /* Success message alert */
@@ -684,6 +660,8 @@ footer {
     border-radius: 8px;
     padding: 15px 20px;
     font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 #successMessage i { /* Check icon in success message */
@@ -692,11 +670,8 @@ footer {
     font-size: 20px;
 }
 
-
 /* Terms and Conditions Checkbox */
-.form-check { /* Terms checkbox container */
-    padding-left: 0;
-}
+.form-check { padding-left: 0; } /* Terms checkbox container */
 
 .form-check-input { /* Checkbox input */
     width: 20px;
@@ -717,28 +692,22 @@ footer {
     text-decoration: none;
 }
 
-.form-check-label a:hover { /* Terms link on hover */
-    text-decoration: underline;
-}
+.form-check-label a:hover { text-decoration: underline; } /* Terms link on hover */
 
-/* Terms Modal Styling */
+/* Terms Modal */
 .modal-header { /* Modal header */
     background-color: #0a1929;
     color: #ffffff;
 }
 
-.modal-header .btn-close { /* Close button */
-    filter: invert(1);
-}
+.modal-header .btn-close { filter: invert(1); } /* Close button */
 
 .modal-title { /* Modal title */
     font-size: 24px;
     font-weight: 700;
 }
 
-.modal-body { /* Modal body content */
-    padding: 30px;
-}
+.modal-body { padding: 30px; } /* Modal body content */
 
 .modal-body h6 { /* Section headings in modal */
     font-size: 16px;
@@ -763,6 +732,54 @@ footer {
     padding-left: 20px;
 }
 
-.modal-footer { /* Modal footer */
-    border-top: 1px solid #e2e8f0;
+.modal-footer { border-top: 1px solid #e2e8f0; } /* Modal footer */
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 991px) {
+    .pricing-section { padding: 60px 0; } /* Pricing section on tablet */
+    .pricing-card { margin-bottom: 20px; } /* Cards spacing on tablet */
+    .testimonials-section { padding: 60px 0; } /* Testimonials on tablet */
+
+    .testimonial-card { /* Testimonial card on mobile */
+        padding: 40px 30px;
+        margin: 0 10px;
+        min-height: auto;
+    }
+
+    .carousel-control-prev { left: 10px; } /* Arrows closer on mobile */
+    .carousel-control-next { right: 10px; }
+
+    .carousel-control-prev,
+    .carousel-control-next { /* Smaller arrows on mobile */
+        width: 40px;
+        height: 40px;
+    }
+
+    .testimonial-text { font-size: 16px; } /* Smaller text on mobile */
+    .proxy-illustration { display: none; } /* Hide illustration on mobile */
+    .explanation-text { font-size: 16px; } /* Smaller text on mobile */
+    .use-case-item i { font-size: 28px; } /* Smaller icons on mobile */
+
+    .what-are-proxies { padding: 60px 0; } /* Section on mobile */
+
+    .cta-pricing { padding: 60px 20px; } /* CTA on mobile */
+
+    .btn-cta-pricing { /* Full width button on mobile */
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .signup-card { padding: 40px 30px; } /* Sign up card on mobile */
+}
+
+@media (max-width: 576px) {
+    .carousel-control-prev,
+    .carousel-control-next { /* Smaller arrows on small mobile */
+        width: 35px;
+        height: 35px;
+    }
+
+    .quote-icon { font-size: 30px; } /* Smaller quote icon on mobile */
 }
